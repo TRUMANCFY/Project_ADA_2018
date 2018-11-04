@@ -24,17 +24,17 @@ What's more, it also provides files containing word, lemma and PoS.
 
 # A list of internal milestones up until project milestone 2
 1. 11.11: 
-  * Extract and sample the useful data from raw dataset
-  * Build subdataset locally and clean the data.
-  * Apply some natural language processing methods to analyze the data.
+   * Extract and sample the useful data from raw dataset
+   * Build subdataset locally and clean the data.
+   * Apply some natural language processing methods to analyze the data.
 1. 11.18: 
-  * Get prelimiary result from the sample dataset and modify our functions if needed
-  * Deal with the whole dataset in the cluster and modify some functions if needed
-  * Get prelimiary result from the complete dataset
+   * Get prelimiary result from the sample dataset and modify our functions if needed
+   * Deal with the whole dataset in the cluster and modify some functions if needed
+   * Get prelimiary result from the complete dataset
 1. 11.25:
-  * Do the data vitualization
-  * Debug
-  * finalize the notebook
+   * Do the data vitualization
+   * Debug
+   * finalize the notebook
   
 
 
