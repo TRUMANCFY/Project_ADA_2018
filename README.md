@@ -9,15 +9,19 @@ We humans have never experienced this era of information explosion before. Every
 * For the same media, will it change its view for the same news over time? 
 
 # Dataset
-We will use the dataset 'News On the Web'. In this dataset, there are .txt files storing id, data, country, media, source and title. 
-For example:
+We will use the dataset 'News On the Web'. In this dataset, there are many .txt files in different folders. The files under 'source' folder contains id, data, country, media, source and title. For example:
 ```
 460137  455     13-08-17        CA      CityNews        http://www.citynews.ca/2013/08/17/sheila-copps-caught-up-in-cambodian-election-crisis/  Sheila Copps caught up in Cambodian election crisis
+```
+If we look at the content of the news, we can find that it is matched with the news on corresponding website. For example:
+```
+@@14637662 <h> Willett hears it from the Hazeltine crowd <h> Related Links <p> Chaska -- Danny Willett really had no idea what to expect during his first career match in the pressure-packed Ryder Cup .
 ```
 What's more, it also provides files containing word, lemma and PoS.
 ```
 14637200        4738387006      Trailing        trail   vvg_jj
 ```
+
 1. We will extract the useful news related to different media. And we may sort the data on country, date and some key words.
 1. We may use some natural language processing methods and make use of the dataset containing lemma and PoS, to find out the polarity of the words and the whole news.
 
