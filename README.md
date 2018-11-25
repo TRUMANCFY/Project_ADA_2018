@@ -26,19 +26,26 @@ What's more, it also provides files containing word, lemma and PoS.
 1. We may use some natural language processing methods and make use of the dataset containing lemma and PoS, to find out the polarity of the words and the whole news.
 
 
-# A list of internal milestones up until project milestone 2
-1. 11.11: 
-   * Extract and sample the useful data from raw dataset
+# Milestone 2 timeline
+1. 11.11:    
    * Build subdataset locally and clean the data.
+     * The dataset has size more than 300 GB, thus to enable fault tolerant development, we selected the news of the United States from August to October in 2016.
+     * By exploring the data content, we found out that there are a lot of meaningless characters, e.g., punctuations which would bring difficulties for further analysis. So we cleaned the data by using regular expression to remove them.
    * Apply some natural language processing methods to analyze the data.
+     * We found out that some type of news are more popular than others and thus more suitable for analysis. To select those popular topics out, we apply tf-idf to the news documents.
+     * To enable further investigation on polarity of media, the polarities of pieces of news are necessary. Therefore, we utilized nltk and textblob sentimental analyzers to obtain those numbers of news. 
 1. 11.18: 
-   * Get prelimiary result from the sample dataset and modify our functions if needed
-   * Deal with the whole dataset in the cluster and modify some functions if needed
-   * Get prelimiary result from the complete dataset
+   * Get preliminary result from the sample dataset
+     * Through investigating into the popularity of topics, we found out that *Trump* was far more popular than others in           our sampled dataset. So we select this topic as a starting point of analysis on polarity.
+     * For simplicity we started our analysis on the data in Oct 2016.
+     * Then we obtained the polarity of each piece of news.  Multiple methods were tried in this section and they will be discussed in details in the Discussion part C.
+     * We then got polarity of each media.
 1. 11.25:
-   * Do the data vitualization
-   * Debug
-   * finalize the notebook
+   * Do the data visualization
+     * We used boxplot to illustrate the polarity distribution of medias.
+   * Extension to bigger datasets
+     * After validating the results on one month basis, we took three months into account both individually and collectively. The polarity distribution of each month and the change through months were visualized.
+
   
 ## Discussion
 ## The problems we encountered during working on milestone2
@@ -50,4 +57,17 @@ When we try to get the content of the news, sometimes we will also get some irre
 Now we use sentiment analyzer module of NLTK and TextBlob to analyse the polarity of each sentence in an article. And we set positive threshold and negative threshold to classify the polarity of the sentences. By calculating the percentage of sentences with different polarities, we determine the polarity of the whole article. 
 One of the problems is that some of the content of the news might be irrelevant to the topic (e.g., Thank you for your reading) because of the incorrect data extraction. And this irrelevant sentences might have a very high or low polarity score, which has a bad influence on our results. Our solution is that we subtract the median polarity score from the mean score to avoid the bias.
 
+# Milestone 3 timeline
+1. 12.1
+    * Build up our classifier on polarity of article
+    * Extend our range to bigger datasets using spark
+
+2. 12.9
+    * Modify our classifier (if needed) to better decide the polarity about other topics
+    * Explore the polarity comparisons from different perspective:
+      * Variance of polarity of same media on same topic overtime 
+      * Variance of polarity of different media on same topic
+      * Variance of polarity of same media on different topics
+3. 12.15 
+    * Finish analysis and visualization of polarity from above viewpoints
 
