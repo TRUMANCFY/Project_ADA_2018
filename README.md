@@ -46,7 +46,9 @@ What's more, it also provides files containing word, lemma and PoS.
    * Extension to bigger datasets
      * After validating the results on one month basis, we took three months into account both individually and collectively. The polarity distribution of each month and the change through months were visualized.
 
-  
+## Response to the questions about milestone1
+The news are supposed to be written without a polarity. What should we do?
+Ans: First of all, we use our analyzing tools to calculate the polarity of randomly sampled news. Then, we read and check the news and find out that they do have different polarity. One possible explantion resides in the nature of media: to gain attention from possible readers. Thus they may take different stands to adapt to different classes of readers. This assumption enables us to conduct the further analysis of polarity of media.
 ## Discussion
 ## The problems we encountered during working on milestone2
 ### A. Select Topic
