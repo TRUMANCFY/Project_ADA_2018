@@ -40,6 +40,14 @@ What's more, it also provides files containing word, lemma and PoS.
    * Debug
    * finalize the notebook
   
-
+## Discussion
+## The problems we encountered during working on milestone2
+### A. Select Topic
+We choose the top 5 keywords to select the topic without any priority. Therefore, sometimes these 5 keywords may not be related to each other. We might choose relative keywords from the most frequent keywords in the future work.
+### B. Get Original Data from Website
+When we try to get the content of the news, sometimes we will also get some irrelevant data. We need to find an efficient way to get only the data we want.
+### C. Conduct Sentimental Analysis
+Now we use sentiment analyzer module of NLTK and TextBlob to analyse the polarity of each sentence in an article. And we set positive threshold and negative threshold to classify the polarity of the sentences. By calculating the percentage of sentences with different polarities, we determine the polarity of the whole article. 
+One of the problems is that some of the content of the news might be irrelevant to the topic (e.g., Thank you for your reading) because of the incorrect data extraction. And this irrelevant sentences might have a very high or low polarity score, which has a bad influence on our results. Our solution is that we subtract the median polarity score from the mean score to avoid the bias.
 
 
