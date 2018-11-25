@@ -65,7 +65,7 @@ One of the problems is that some of the content of the news might be irrelevant 
     * Extend our range to bigger datasets using spark
 
 2. 12.9
-    * Modify our classifier (if needed) to better decide the polarity about other topics
+    * Modify our classifier (if needed) to better decide the polarity about various topics
     * Explore the polarity comparisons from different perspective:
       * Variance of polarity of same media on same topic overtime 
       * Variance of polarity of different media on same topic
