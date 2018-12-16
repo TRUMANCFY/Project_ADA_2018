@@ -73,3 +73,54 @@ One of the problems is that some of the content of the news might be irrelevant 
 3. 12.15 
     * Finish analysis and visualization of polarity from above viewpoints
 
+## Response to the questions about milestone2
+1.How to show that we correctly classifying the news?
+
+Ans: First of all, we randomly chose some articles as samples and classified them manually. All the team members read those sample articles and tagged them as "positive", "negative", or "neutral" news with an integer value 1, -1 or 0. Then, we chose the majority tag to be the final polarity tag for an article. Finally, we used our sentimental classifier to tag those articles and calculated the accuracy. 
+
+2.Is the detected polarity score significant?
+
+Ans: The noise in the sentimental analysis is quite difficult to deal with, and we found out the quantitative result could not distinguish the media polarity very much. And the time variation was not very obvious. Therefore, we switched our method from quantitative to qualitative. Now we found the threshold and classify the articles to three classes which are 'positive', 'negative', and 'neural', based on the polarity score. The results became better after changing the method.
+
+3.Is the polarity change over time significant?
+
+Ans: As we mentioned above, we classify the articles to three classes instead of polarity scores. The results showed that the proportion of three classes of medias almost remained the same except October. Therefore, we have checked the content of some articles of October. Surperisingly, we found many pieces of news about scandals in the dataset of October. After searching on the internet, we found the phrase “October surprise”. An October surprise is news specifically (and cynically) timed by one side or another to sway an election, which explains the increasing "negative" tags in October and showed that our results were reliable.
+
+## Main workflow in milestone3
+
+### Improvement of Milestone2
+
+1. Media Grouping and Selection: for one media, it can be presented in multiple formats, such as 'Fox News', 'fox6', and 'www.fox5sendiego.com'. Therefore, we need to collect and group them together as one media. Also, as there are thousands of medias on the website, we decided to choose the mainstream medias based on the reference(https://www.allyoucanread.com/american-newspapers/).
+2. Qualitative method: We switched our method from quantitative to qualitative, which is tagging the articles with "positive", "negative" and "neutral" labels based on the polarity score.
+
+### Topic Expansion
+
+Based on the keywords we got in milestone2 with ti-idf, we found more topics related to Trump by three methods which are simple frequency check, cosine similarity check, and Latent Dirichlet allocation.
+
+### Media Polarity Analysis for New Topics
+
+We tagged the articles based on the polarity score we got in milestone2, and then calculated the proportion of three classes for each media. With the results, we compare the polarity of different medias about the same topic, and then compare the porlarity of different topics for the same media.
+
+### Visualization
+
+We visualized the results we got above to show the polarity of medias in different topics.
+
+# Contribution
+
+Fengyu Cai: ; 
+
+Liangwei Chen: ; 
+
+Ruibin Huang: .
+
+### Special thanks: 
+
+Dr. Periklis Chrysogelos, Data-Intensive Applications and Systems Laboratory (DIAS), École polytechnique fédérale de Lausanne, gave us feedback and suggestions during the whole project process.
+
+
+
+
+
+
+
+
