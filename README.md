@@ -1,5 +1,7 @@
 # Exploration on Media polarity in the News
 
+Data Story: https://rhuangag.github.io/DataStory/
+
 # Abstract
 We humans have never experienced this era of information explosion before. Every day, thousands of media spread millions of pieces of news with their own remark to some degree. Instead of keeping the purity, objectivity, and neutrality of news, some media are discovered to publish diametrically opponent narratives about the same event. The media no longer work as a convenient information channel, but also the propaganda artifice of political parties and consortiums. The consistency to the truth inspires us to summarize the phenomena of media polarity. In our project, we will mine in the dataset 'News on the Web' (NOW), which contains 6.6 billion words and the worldwide newspaper and magazines. Through sampling and analyzing this authoritative data collection, we will try to find out the internal positions of some media agencies on some sensitive and controversial issues, such as the presidential election. Also, from the chronological aspect, we hope to find out whether there exist time variation for one specific media agency from 2010 to present. We might use some technologies like natural language processing, machine learning, text mining and cloud computing.
 
@@ -84,7 +86,7 @@ Ans: The noise in the sentimental analysis is quite difficult to deal with, and 
 
 3.Is the polarity change over time significant?
 
-Ans: As we mentioned above, we classify the articles to three classes instead of polarity scores. The results showed that the proportion of three classes of medias almost remained the same except October. Therefore, we have checked the content of some articles of October. Surperisingly, we found many pieces of news about scandals in the dataset of October. After searching on the internet, we found the phrase “October surprise”. An October surprise is news specifically (and cynically) timed by one side or another to sway an election, which explains the increasing "negative" tags in October and showed that our results were reliable.
+Ans: As we mentioned above, we classify the articles to three classes instead of polarity scores. The results showed that the proportion of three classes of medias almost remained the same except October. Therefore, we have checked the content of some articles of October. Surprisingly, we found many pieces of news about scandals in the dataset of October. After searching on the internet, we found the phrase “October surprise”. An October surprise is news specifically (and cynically) timed by one side or another to sway an election, which explains the increasing "negative" tags in October and showed that our results were reliable.
 
 ## Main workflow in milestone3
 
@@ -107,11 +109,11 @@ We visualized the results we got above to show the polarity of medias in differe
 
 # Contribution
 
-Fengyu Cai: ; 
+Fengyu Cai: Coming up with the research questions, topic selection and expansion, writing up the data story; 
 
-Liangwei Chen: ; 
+Liangwei Chen: Visualization and plotting the graphs, code optimization; 
 
-Ruibin Huang: .
+Ruibin Huang: Coming up with the sentiment analysis method, data analysis for extended topics.
 
 ### Special thanks: 
 
